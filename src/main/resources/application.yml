@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:db
+    username: sa
+    password:
+    schema: classpath:schema-hsql.sql
+  activemq:
+    in-memory: true
+    pool:
+      enabled: false
+spring.activemq.broker-url: vm://localhost?broker.persistent=false&broker.useShutdownHook=false
+spring.batch.job.enabled: false
+activemq:
+  destination: jobTrigger
+memoryCache:
+  maxItemsSize: 100000
+  liveTime: 100000
+  timerInterval: 100000

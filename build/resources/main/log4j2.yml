@@ -1,0 +1,19 @@
+Configuration:
+  status: WARN
+  properties:
+    property:
+      - name: app_name
+        value: ${bundle:logging:info.app.name}
+      - name: app_version
+        value: ${bundle:logging:info.app.version}
+
+  appenders:
+    Console:
+      name: ConsoleAppender
+      PatternLayout:
+        Pattern: "%date{yyyy-MM-dd'T'HH:mm:ss.SSS}{UTC} %5p %t %c{5.} app_name=${app_name} app_version=${app_version}%notEmpty{ event_id=%X{event.id}} - %msg%n"
+  Loggers:
+    Root:
+      level: INFO
+      AppenderRef:
+        ref: ConsoleAppender

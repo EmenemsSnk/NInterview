@@ -1,0 +1,6 @@
+com/mdziedzic/interview/samplerestservice/cache/MemoryCacheTest.java
+ com.mdziedzic.interview.samplerestservice.cache.MemoryCacheTest
+com/mdziedzic/interview/samplerestservice/cache/RestServiceIT.java
+ com.mdziedzic.interview.samplerestservice.cache.RestServiceIT
+com/mdziedzic/interview/samplerestservice/restcontroller/TriggerControllerTest.java
+ com.mdziedzic.interview.samplerestservice.restcontroller.TriggerControllerTest

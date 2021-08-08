@@ -1,0 +1,22 @@
+ext {
+    HSQLDB_VERSION = '2.5.1'
+    COMMONS_VERSION = '4.4'
+
+    libraries = [
+            activeMQ   : "org.springframework.boot:spring-boot-starter-activemq",
+            commons    : "org.apache.commons:commons-collections4:$COMMONS_VERSION",
+            hsqldb     : "org.hsqldb:hsqldb:$HSQLDB_VERSION",
+            lombok     : "org.projectlombok:lombok",
+            springBatch: "org.springframework.boot:spring-boot-starter-batch",
+            springBoot : "org.springframework.boot:spring-boot-starter",
+            springWeb  : "org.springframework.boot:spring-boot-starter-web"
+    ]
+
+    testLibraries = [
+            junitApi   : "org.junit.jupiter:junit-jupiter-api",
+            junitEngine: "org.junit.jupiter:junit-jupiter-engine",
+            junitParams: "org.junit.jupiter:junit-jupiter-params",
+            mockito    : "org.mockito:mockito-core",
+            springTest : "org.springframework.boot:spring-boot-starter-test"
+    ]
+}

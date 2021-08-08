@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    schema: classpath:schema-it-hsql.sql
+memoryCache:
+  maxItemsSize: 20000
+  liveTime: 10000
+  timerInterval: 10000
